@@ -1,0 +1,35 @@
+<html>
+  <body>
+<table border = "2"> <!-- 칸막이 -->
+ <thead>
+<style>
+	body{
+		background-color:pink;
+}
+</style>
+<tr>
+  <th>이름</th>     <th>성별</th>  <th>주소</th><th>회비</th>
+</tr>
+ </thead>
+ 
+ <tbody>
+<tr>
+  <td>최진혁</td>  <td>남</td>     <td rowspan="2">청주</td>   <td>1000</td>
+                                                   <!-- rowspan : 2개의 행(수직)이 병합된다, 병합하는 나머지는 지워주기 -->
+</tr>
+
+<tr>
+  <td>최유빈</td>  <td>남</td>    <td>500</td>
+</tr>
+ </thead>
+ 
+ <tfoot>
+  <tr>
+    <td colspan = "3">합계</td> <td>1500</td>
+	<!-- colspan : 3개의 열이 병합된다, 병합하는 나머지는 지워주기-->
+  </tr>
+ </tfoot>
+
+</table>
+  </body>
+</html>
